@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./resturent.css";
 import Menu from "./ManuApi";
 import MenuCard from "./MenuCard";
-import NavBar from "./navBar";
+// import NavBar from "./navBar";
 // console.log("MenuCard",Menu);
+import Filter from "./Filter";
 
 const uniqueList = [
   ... new Set(
@@ -24,12 +25,11 @@ const Resturent = () => {
       let data = Menu.filter(word => {return word.category === arg})
       setMenuData(data)
     }
-
   }
 
   return (
     <>
-      <NavBar  manuHandler={manuHandler} menuList={menuList}/>
+      <Filter manuHandler={manuHandler} menuList={menuList}/>
       <MenuCard menuData={menuData} />
     </>
   );

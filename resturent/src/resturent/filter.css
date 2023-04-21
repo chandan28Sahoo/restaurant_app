@@ -1,0 +1,12 @@
+.side_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+}
+
+.centerDiv{
+    display: flex;
+    justify-content: center;
+    
+}

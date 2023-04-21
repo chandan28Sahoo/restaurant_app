@@ -145,6 +145,22 @@
     z-index: -1;
   }
   
+  .card-tag  subtle{
+    justify-content: center;
+  }
+.buttonHandler{
+  display: flex;
+  justify-content: space-between;
+  /* height: 40px; */
+  align-items: center;
+}
+
+.title-price-Div{
+  display: flex;
+  justify-content: space-between;
+}
+
+
   @media (max-width: 998px) {
     .main-card--cointainer {
       display: grid;
@@ -213,3 +229,5 @@
     opacity: 1;
     transform: translatey(-2px);
   }
+
+
